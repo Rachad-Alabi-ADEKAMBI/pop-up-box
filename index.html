@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- importation des icones de la bibliotheque-->
+    <script
+      src="https://kit.fontawesome.com/b14771b76e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>pop up2</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--premier titre de la page principale-->
+      <h1 class="contenu-page__titre">Lorem ipsum dolor sit</h1>
+
+      <!--texte  de description de la page principale-->
+      <p class="contenu-page__description">Lorem ipsum dolor sit</p>
+
+      <!--premier paragraphe de la page principale-->
+      <p class="contenu-page__description-1">
+        Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        id est laborum.
+      </p>
+
+      <!--deuxieme paragraphe de la page principale-->
+      <p class="contenu-page__description-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo . aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        id est laborum.
+      </p>
+
+      <!--image avec texte de la page principale-->
+      <div class="zone-image-principale">
+        <img src="img.jpg" alt="image de ..." class="" />
+        <p class="texte-image-principale">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <!--troisieme paragraphe de la page principale-->
+      <p class="contenu-page__description-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id.
+      </p>
+
+      <!--bouton pour activer le pop up-->
+      <input type="checkbox" id="click" />
+      <label for="click" class="click-me" id="click-me">Cliquez ici</label>
+
+      <!--debut du pop up-->
+      <div class="pop-up">
+        <!--partie gauche du pop up, image-->
+        <div class="pop-up__image">
+          <img src="img.jpg" alt="image de ..." class="image" />
+        </div>
+
+        <!--partie droite du pop up, texte et formulaire-->
+        <div class="pop-up__infos">
+          <!--bouton pour fermer le pop up-->
+          <label for="click" class="fas fa-times" id="bouton-fermer"></label>
+
+          <!--premier texte du pop up-->
+          <p class="pop-up__texte1">is now</p>
+
+          <!--deuxieme texte du pop up-->
+          <p class="pop-up__texte2">FREE <span>for</span> 10 Users</p>
+
+          <!--troisieme texte du pop up-->
+          <p class="pop-up__texte3">
+            sell, Market, & Serve like the fortune 500
+          </p>
+
+          <!--formulaire pour envoyer les informations-->
+          <form class="formulaire" action="" method="POST">
+            <!-- bouton pour le choix du produit-->
+            <select name="select-option" class="select-option">
+              <option value="Free for 10 users">Free for 10 users</option>
+            </select>
+
+            <!--bouton pour entrer son email  -->
+            <input type="email" placeholder="Your email" class="email" />
+
+            <!--bouton envoyer-->
+            <input
+              type="submit"
+              value="Sign up today"
+              class="bouton_valider"
+            /><br />
+
+            <!--lien vers une page-->
+            <a href="" class="lien"
+              >No, i want to learn more about the product</a
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

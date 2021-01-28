@@ -1,0 +1,383 @@
+/*regles css génerales*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  user-select: none;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/*conteneur principale*/
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*page principale*/
+.contenu-page {
+  margin: auto;
+  width: 75%;
+}
+
+/*tire de la page principale*/
+.contenu-page__titre {
+  font-size: 2.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*description de la page principale*/
+.contenu-page__description {
+  margin: 30px auto;
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*description1*/
+.contenu-page__description-1 {
+  width: 75%;
+  margin: 50px auto;
+}
+
+/*description2*/
+.contenu-page__description-2 {
+  width: 75%;
+  text-align: left;
+  margin: 50px auto;
+}
+
+/*zone avec image et texte de la page prioncipale*/
+.zone-image-principale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 250px;
+  width: 60%;
+  margin: auto;
+}
+
+/*image de page principale*/
+.image-principale {
+  margin: auto 20px;
+}
+
+/*texte de la page principale*/
+.texte-image-principale {
+  margin: 100px auto auto 20px;
+  width: 50%;
+}
+
+/*description3*/
+.contenu-page__description-3 {
+  width: 75%;
+  text-align: left;
+  margin: 50px auto;
+}
+
+/*bouton pour activer le pop up*/
+#click {
+  display: none;
+}
+
+/*action ACTIVER le pop up*/
+#click:checked ~ .pop-up {
+  opacity: 1;
+  visibility: visible;
+}
+
+.click-me {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(135, 245, 135);
+  color: white;
+  border: 1px rgb(135, 245, 135) solid;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+#click-me:hover {
+  background-color: rgb(81, 248, 76);
+  font-size: 1.2em;
+}
+/* fin de l'action*/
+
+/*règles CSS du pop up*/
+.pop-up {
+  width: 800px;
+  height: 600px;
+  top: 20px;
+  left: 25%;
+  border: 2px rgb(232, 241, 248) solid;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+/*partie image du pop up, partie gauche*/
+.pop-up__image {
+  width: 300px;
+  margin: auto 0;
+  height: 100%;
+}
+
+/*image de l'image gauche*/
+.image {
+  width: 280px;
+  height: 80%;
+  margin: auto;
+}
+
+/*partie droite du pop up*/
+.pop-up__infos {
+  margin: 0 auto 0 auto;
+}
+
+/*bouton pour FERMER le pop up*/
+.fa-times {
+  margin: 15px 0 auto auto;
+  width: 30px;
+  cursor: pointer;
+}
+
+#bouton-fermer {
+  margin: auto 10px auto auto;
+}
+
+#bouton_fermer ~ .pop-up {
+  opacity: 0;
+  visibility: hidden;
+}
+/* fin de l'action pour fermer le pop up*/
+
+/*texte 1 du pop up*/
+.pop-up__texte1 {
+  font-size: 1.3em;
+  margin: 30px auto;
+  color: black;
+}
+
+/*texte 2 du pop up*/
+.pop-up__texte2 {
+  color: rgb(245, 125, 78);
+  font-size: 2.2em;
+  margin: 15px auto;
+  font-weight: bold;
+}
+
+span {
+  color: black;
+}
+
+/*texte 3 du pop up*/
+.pop-up__texte3 {
+  margin: 15px auto;
+  font-family: fantasy;
+  font-size: 1.8em;
+}
+
+/*formulaire du pop up*/
+.formulaire {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+}
+
+/*option du pop up*/
+.select-option {
+  height: 40px;
+  border: 1px grey solid;
+  padding-left: 10px;
+  background-color: white;
+  margin: 20px auto 0 auto;
+  width: 410px;
+}
+
+/*bouton de l'email*/
+.email {
+  height: 40px;
+  border: 1px grey solid;
+  padding-left: 10px;
+  background-color: white;
+  margin: 20px auto 0 auto;
+  width: 400px;
+}
+
+/*bouton envoyer*/
+.bouton_valider {
+  height: 50px;
+  border: 1px green solid;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  width: 410px;
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: rgb(135, 245, 135);
+  color: white;
+  cursor: pointer;
+}
+
+/* lien en bas du pop up*/
+.lien {
+  color: blue;
+  margin: 20px auto;
+}
+
+/*media queries pour tablettes de  1024px 
+certains styles sont rrécrits de nouveau pour s'adapter à la taille
+de l'écran*/
+@media screen and (max-width: 1024px) {
+  .pop-up {
+    width: 710px;
+    left: 10%;
+  }
+
+  .texte-image-principale {
+    display: none;
+  }
+}
+
+/*media queries pour tablettess de  768px **/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  /*réduire l'interligne entre les textes*/
+  .contenu-page__description1,
+  .contenu-page__description-2,
+  .contenu-page__description-3 {
+    margin: 20px auto 5px auto;
+  }
+
+  .image-principale {
+    margin: 10px auto 5px auto;
+  }
+
+  /*pop- up*/
+  .pop-up {
+    width: 85vw;
+    left: 5%;
+    margin: 200px auto;
+  }
+
+  .texte-image-principale {
+    display: none;
+  }
+  .pop-up__image {
+    width: 250px;
+  }
+
+  .image {
+    width: 250px;
+  }
+  .select-option {
+    width: 65%;
+  }
+
+  .email {
+    width: 65%;
+  }
+
+  .bouton_valider {
+    width: 65%;
+  }
+}
+
+/*media queries pour telephones de  576px **/
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .contenu-page__description1,
+  .contenu-page__description-2,
+  .contenu-page__description-3 {
+    margin: 20px auto 5px auto;
+  }
+
+  .texte-image-principale {
+    display: none;
+  }
+
+  #click {
+    position: relative;
+  }
+
+  /*le flex  direction column pour chager l'affichage 
+  sur mobiles*/
+  .pop-up {
+    top: 750px;
+    width: 80vw;
+    margin: auto;
+    left: 5%;
+    height: 700px;
+    flex-direction: column;
+  }
+
+  .pop-up__image {
+    height: 35%;
+    margin: 5px auto 5px auto;
+  }
+
+  .image {
+    margin: auto auto 0 auto;
+  }
+
+  .fa-times {
+    margin: 0 10px auto auto;
+  }
+  .select-option {
+    width: 50%;
+  }
+
+  .pop-up__texte1 {
+    margin: 5px auto;
+  }
+
+  .bouton_valider {
+    width: 50%;
+  }
+
+  .pop-up__texte1 {
+    margin: 10px auto;
+  }
+
+  .pop-up__texte2 {
+    margin: 10px auto;
+    font-size: 1.8em;
+  }
+
+  .pop-up__texte3 {
+    margin: 10px auto;
+  }
+
+  .select-option,
+  .bouton_valider {
+    width: 200px;
+  }
+
+  .email {
+    width: 190px;
+  }
+}
